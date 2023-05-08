@@ -4,6 +4,10 @@ import grpc
 from concurrent import futures
 import currency_converter_pb2
 import currency_converter_pb2_grpc
+import sys
+
+sys.path.insert(0, "/tmp/currency_converter_grpc")
+
 from api_keys.api_keys import VALID_API_KEYS
 
 CURRENCY_URL = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'
